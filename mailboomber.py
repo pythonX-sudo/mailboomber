@@ -23,10 +23,10 @@ amount = int(input('Amount of Messages. (only integer value)\n>>> '))
 count = 1
 sleep = int(input('Set sleep timer. (only integer value)\n>>> '))
 
-print('[0] '+str(amount)+' message will send to '+str(receiver))
+print('[0] '+str(amount)+' Mail will send to '+str(receiver))
 while count <= amount:
     server.login(gmail, password)
     server.sendmail(gmail, receiver, message)
     count += 1
     time.sleep(sleep)
-print('[0] Message Boombing done!!!')
+print('[0] Mail Boombing done!!!')
