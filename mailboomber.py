@@ -21,7 +21,7 @@ receiver = str(input('[~] Receiver/Victims Email address.\nEx: victim@gmail.com\
 message = str(input('Write the message here.\n>>> '))
 amount = int(input('Amount of Messages. (only integer value)\n>>> '))
 count = 1
-sleep = int(input('Set sleep timer. (only integer value)\n>>> '))
+sleep = int(input('Set sleep timer. (sec) min 2\n>>> '))
 
 print('[0] '+str(amount)+' Mail will send to '+str(receiver))
 while count <= amount:
